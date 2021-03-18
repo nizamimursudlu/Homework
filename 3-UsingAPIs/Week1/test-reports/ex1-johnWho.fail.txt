@@ -1,0 +1,3 @@
+*** Unit Test Error Report ***
+
+- getAnonName should take a single argument
