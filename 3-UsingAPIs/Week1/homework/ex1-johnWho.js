@@ -7,7 +7,7 @@ Rewrite this function, but replace the callback syntax with the Promise syntax:
   didn't pass in a first name!"
 ------------------------------------------------------------------------------*/
 // TODO see above
-function getAnonName(firstName) {
+const getAnonName = (firstName) => {
   return new Promise((resolve, reject) => {
     setTimeout(() => {
       if (firstName) {
