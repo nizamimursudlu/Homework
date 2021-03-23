@@ -7,20 +7,20 @@ Rewrite this function, but replace the callback syntax with the Promise syntax:
   didn't pass in a first name!"
 ------------------------------------------------------------------------------*/
 // TODO see above
-const getAnonName = (firstName, callback) => {
-  setTimeout(() => {
-    if (!firstName) {
-      callback(new Error("You didn't pass in a first name!"));
-      return;
-    }
+const getAnonName = (firstName) => {
+  return new Promise((resolve, reject) => {
+    setTimeout(() => {
+      if (firstName) {
+        resolve(`${firstName} Doe`)
+      } else {
+        reject(new Error("You didn't pass in a first name!"))
+      }
+    }, 1000)
+  })
+}
+getAnonName("John").then(res => console.log(res)).catch((error) => console.log(error.message))
 
-    const fullName = `${firstName} Doe`;
 
-    callback(fullName);
-  }, 1000);
-};
-
-getAnonName('John', console.log);
 
 // ! Do not change or remove the code below
 module.exports = getAnonName;
