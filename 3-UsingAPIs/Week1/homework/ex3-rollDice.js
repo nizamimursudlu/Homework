@@ -4,7 +4,7 @@
 - Refactor the `rollBack()` function from callback-based to returning a
   promise.
 - Change the calls to `callback()` to calls to `resolve()` and `reject()`.
-- Refactor the code that call `rollDice()` to use the promise it returns.
+- Refactor the code that call `evert` to use the promise it returns.
 - Does the problem described above still occur? If not, what would be your
   explanation? Add your answer as a comment to be bottom of the file.
 ------------------------------------------------------------------------------*/
@@ -23,7 +23,7 @@ function rollDice() {
       // Use callback to notify that the dice rolled off the table after 6 rolls
       if (roll > 6) {
         // TODO replace "error" callback
-        return reject(new Error('Oops... Dice rolled off the table.'));
+        reject(new Error('Oops... Dice rolled off the table.'));
       }
 
       // Use callback to communicate the final dice value once finished rolling
@@ -35,6 +35,7 @@ function rollDice() {
       // Schedule the next roll todo until no more rolls to do
       if (roll < randomRollsToDo) {
         setTimeout(() => rollOnce(roll + 1), 500);
+
       }
     };
 
@@ -58,6 +59,6 @@ rollDice()
 module.exports = rollDice;
 
 
-// i added 'return' in line 26
-// so if case error 'Dice rolled off the table.' (roll > 6)
-// it stops the function without going to the next
+// the problem described above does not occur anymore
+// once promise is wether solved or rejected it cannot be changed anymore
+// no matter how many times the function is called

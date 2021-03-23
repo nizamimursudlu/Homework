@@ -28,10 +28,8 @@ function rollTheDices() {
 
 rollTheDices()
 
-// in the case of a rejected promise, dices that have not yet finished their roll continue,
-// because in fine pokerDiceRoller.js in line 70 'reject' doesn't stop execution on the function
-// it can be solved if we return it
-// p.s. you have to run in quite some times to get success, IT'S THERE :)
-
 // ! Do not change or remove the code below
 module.export = rollTheDices;
+
+// reject does not stop executing of the function
+// so it does to the next promise
