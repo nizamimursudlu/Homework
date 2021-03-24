@@ -18,18 +18,62 @@ Complete the four functions provided in the starter `index.js` file:
 Try and avoid using global variables. Instead, use function parameters and 
 return values to pass data back and forth.
 ------------------------------------------------------------------------------*/
-function fetchData(/* TODO parameter(s) go here */) {
+const div = document.createElement("div");
+document.body.appendChild(div);
+
+
+const button = document.createElement("button");
+div.appendChild(button);
+button.id = "button";
+button.setAttribute("type", "submit")
+button.textContent = "GetPokemon!";
+
+
+const form = document.createElement("form");
+div.appendChild(form);
+
+const select = document.createElement("select");
+form.appendChild(select);
+select.id = "select";
+
+const img = document.createElement("img")
+
+
+async function fetchData(url) {
   // TODO complete this function
+  const response = await fetch(url);
+  const json = await response.json();
+  return json.results;
 }
 
-function fetchAndPopulatePokemons(/* TODO parameter(s) go here */) {
+
+function fetchAndPopulatePokemons(data) {
   // TODO complete this function
+  data.forEach((pokemon) => {
+    const option = document.createElement("option")
+    select.appendChild(option)
+    option.value = pokemon.name
+    option.textContent = pokemon.name
+  })
 }
 
-function fetchImage(/* TODO parameter(s) go here */) {
+select.onchange = async function fetchImage() {
   // TODO complete this function
+  const resp = await fetch(`https://pokeapi.co/api/v2/pokemon/${select.value}`)
+  const imageData = await resp.json()
+  const image = imageData.sprites.front_default
+  div.appendChild(img).src = image
 }
 
-function main() {
-  // TODO complete this function
+
+window.onload = () => {
+  button.addEventListener('click', async function main() {
+    // TODO complete this function
+    try {
+      const data = await fetchData("https://pokeapi.co/api/v2/pokemon/?limit=151")
+      fetchAndPopulatePokemons(data)
+    } catch (error) {
+      console.log(error)
+    }
+  })
 }
