@@ -1,0 +1,333 @@
+2021-03-23 08:10:05 info: ---------------------------------------------
+2021-03-23 08:10:05 info: >>> Running Unit Test `ex1-programmerFun` <<<
+2021-03-23 08:10:05 info: ---------------------------------------------
+2021-03-23 08:10:11 info: All unit tests passed.
+2021-03-23 08:10:12 error: *** ESLint Report ***
+
+ex1-programmerFun/index.js
+  41:1  warning  Remove commented-out code  hyf/no-commented-out-code
+
+✖ 1 problem (0 errors, 1 warning)
+
+
+2021-03-23 08:10:42 info: ---------------------------------------------
+2021-03-23 08:10:42 info: >>> Running Unit Test `ex1-programmerFun` <<<
+2021-03-23 08:10:42 info: ---------------------------------------------
+2021-03-23 08:10:46 info: All unit tests passed.
+2021-03-23 08:10:48 info: All steps were completed successfully
+2021-03-24 09:39:28 info: ------------------------------------------
+2021-03-24 09:39:28 info: >>> Running Unit Test `ex2-pokemonApp` <<<
+2021-03-24 09:39:28 info: ------------------------------------------
+2021-03-24 09:39:34 error: *** Unit Test Error Report ***
+
+- pokemonApp HTML should be syntactically valid
+  inline
+    11:2   error  <button> is missing required "type" attribute  element-required-attributes
+    11:42  error  <form> element must have a submit button       wcag/h32
+  
+  ✖ 2 problems (2 errors, 0 warnings)
+  
+
+2021-03-24 09:42:04 info: ------------------------------------------
+2021-03-24 09:42:04 info: >>> Running Unit Test `ex2-pokemonApp` <<<
+2021-03-24 09:42:04 info: ------------------------------------------
+2021-03-24 09:42:09 error: *** Unit Test Error Report ***
+
+- pokemonApp HTML should be syntactically valid
+  inline
+    11:56  error  <form> element must have a submit button  wcag/h32
+  
+  ✖ 1 problem (1 error, 0 warnings)
+  
+
+2021-03-24 09:42:43 info: ------------------------------------------
+2021-03-24 09:42:43 info: >>> Running Unit Test `ex2-pokemonApp` <<<
+2021-03-24 09:42:43 info: ------------------------------------------
+2021-03-24 09:42:47 error: *** Unit Test Error Report ***
+
+- pokemonApp HTML should be syntactically valid
+  inline
+    11:56  error  <form> element must have a submit button  wcag/h32
+  
+  ✖ 1 problem (1 error, 0 warnings)
+  
+
+2021-03-24 09:44:26 info: ------------------------------------------
+2021-03-24 09:44:26 info: >>> Running Unit Test `ex2-pokemonApp` <<<
+2021-03-24 09:44:26 info: ------------------------------------------
+2021-03-24 09:44:31 error: *** Unit Test Error Report ***
+
+- pokemonApp HTML should be syntactically valid
+  inline
+    11:56  error  <form> element must have a submit button  wcag/h32
+  
+  ✖ 1 problem (1 error, 0 warnings)
+  
+
+2021-03-24 09:46:02 info: ------------------------------------------
+2021-03-24 09:46:02 info: >>> Running Unit Test `ex2-pokemonApp` <<<
+2021-03-24 09:46:02 info: ------------------------------------------
+2021-03-24 09:46:07 error: *** Unit Test Error Report ***
+
+- pokemonApp HTML should be syntactically valid
+  inline
+    11:56  error  <form> element must have a submit button  wcag/h32
+  
+  ✖ 1 problem (1 error, 0 warnings)
+  
+
+2021-03-24 09:47:09 info: ------------------------------------------
+2021-03-24 09:47:09 info: >>> Running Unit Test `ex2-pokemonApp` <<<
+2021-03-24 09:47:09 info: ------------------------------------------
+2021-03-24 09:47:15 error: *** Unit Test Error Report ***
+
+- pokemonApp HTML should be syntactically valid
+  inline
+    11:56  error  <form> element must have a submit button  wcag/h32
+  
+  ✖ 1 problem (1 error, 0 warnings)
+  
+
+2021-03-24 09:49:26 info: ------------------------------------------
+2021-03-24 09:49:26 info: >>> Running Unit Test `ex2-pokemonApp` <<<
+2021-03-24 09:49:26 info: ------------------------------------------
+2021-03-24 09:49:32 error: *** Unit Test Error Report ***
+
+- pokemonApp HTML should be syntactically valid
+  inline
+    11:2  error  <form> element must have a submit button  wcag/h32
+  
+  ✖ 1 problem (1 error, 0 warnings)
+  
+
+2021-03-24 09:49:33 error: *** ESLint Report ***
+
+ex2-pokemonApp/index.js
+  24:1  warning  Remove commented-out code  hyf/no-commented-out-code
+
+✖ 1 problem (0 errors, 1 warning)
+
+
+2021-03-24 09:50:01 info: ------------------------------------------
+2021-03-24 09:50:01 info: >>> Running Unit Test `ex2-pokemonApp` <<<
+2021-03-24 09:50:01 info: ------------------------------------------
+2021-03-24 09:50:06 info: All unit tests passed.
+2021-03-24 09:50:07 error: *** ESLint Report ***
+
+ex2-pokemonApp/index.js
+  24:1  warning  Remove commented-out code  hyf/no-commented-out-code
+
+✖ 1 problem (0 errors, 1 warning)
+
+
+2021-03-24 09:50:27 info: ------------------------------------------
+2021-03-24 09:50:27 info: >>> Running Unit Test `ex2-pokemonApp` <<<
+2021-03-24 09:50:27 info: ------------------------------------------
+2021-03-24 09:50:31 info: All unit tests passed.
+2021-03-24 09:50:34 info: All steps were completed successfully
+2021-03-24 12:46:42 info: -----------------------------------------
+2021-03-24 12:46:42 info: >>> Running Unit Test `ex3-rollAnAce` <<<
+2021-03-24 12:46:42 info: -----------------------------------------
+2021-03-24 12:46:46 info: All unit tests passed.
+2021-03-24 12:46:47 error: *** ESLint Report ***
+
+ex3-rollAnAce.js
+  2:9  error  'values' is assigned a value but never used  no-unused-vars
+
+✖ 1 problem (1 error, 0 warnings)
+
+
+2021-03-24 12:48:59 info: -----------------------------------------
+2021-03-24 12:48:59 info: >>> Running Unit Test `ex3-rollAnAce` <<<
+2021-03-24 12:48:59 info: -----------------------------------------
+2021-03-24 12:49:02 info: All unit tests passed.
+2021-03-24 12:49:04 info: All steps were completed successfully
+2021-03-24 03:41:24 info: ------------------------------------------
+2021-03-24 03:41:24 info: >>> Running Unit Test `ex2-pokemonApp` <<<
+2021-03-24 03:41:24 info: ------------------------------------------
+2021-03-24 03:41:30 error: *** Unit Test Error Report ***
+
+- pokemonApp HTML should be syntactically valid
+  inline
+    11:70  error  <form> element must have a submit button  wcag/h32
+  
+  ✖ 1 problem (1 error, 0 warnings)
+  
+
+2021-03-24 03:50:51 info: ------------------------------------------
+2021-03-24 03:50:51 info: >>> Running Unit Test `ex2-pokemonApp` <<<
+2021-03-24 03:50:51 info: ------------------------------------------
+2021-03-24 03:50:57 info: All unit tests passed.
+2021-03-24 03:50:59 info: All steps were completed successfully
+2021-03-24 04:25:32 info: ----------------------------------------
+2021-03-24 04:25:32 info: >>> Running Unit Test `ex4-diceRace` <<<
+2021-03-24 04:25:32 info: ----------------------------------------
+2021-03-24 04:25:36 error: *** Unit Test Error Report ***
+
+- ex5-diceRace should resolve as soon as a dice settles successfully
+- ex5-diceRace should reject with an Error as soon as a dice rolls off the table
+
+2021-03-24 04:26:11 info: ----------------------------------------
+2021-03-24 04:26:11 info: >>> Running Unit Test `ex4-diceRace` <<<
+2021-03-24 04:26:11 info: ----------------------------------------
+2021-03-24 04:26:14 error: *** Unit Test Error Report ***
+
+- ex5-diceRace should resolve as soon as a dice settles successfully
+- ex5-diceRace should reject with an Error as soon as a dice rolls off the table
+
+2021-03-24 04:31:05 info: ----------------------------------------
+2021-03-24 04:31:05 info: >>> Running Unit Test `ex4-diceRace` <<<
+2021-03-24 04:31:05 info: ----------------------------------------
+2021-03-24 04:31:09 error: *** Unit Test Error Report ***
+
+- ex5-diceRace should resolve as soon as a dice settles successfully
+- ex5-diceRace should reject with an Error as soon as a dice rolls off the table
+
+2021-03-24 04:57:43 info: ----------------------------------------
+2021-03-24 04:57:43 info: >>> Running Unit Test `ex4-diceRace` <<<
+2021-03-24 04:57:43 info: ----------------------------------------
+2021-03-24 04:57:46 error: *** Unit Test Error Report ***
+
+- ex5-diceRace should resolve as soon as a dice settles successfully
+- ex5-diceRace should reject with an Error as soon as a dice rolls off the table
+
+2021-03-24 05:27:43 info: ------------------------------------------
+2021-03-24 05:27:43 info: >>> Running Unit Test `ex2-pokemonApp` <<<
+2021-03-24 05:27:43 info: ------------------------------------------
+2021-03-24 05:27:49 error: *** Unit Test Error Report ***
+
+- pokemonApp HTML should be syntactically valid
+  inline
+    11:61  error  <form> element must have a submit button  wcag/h32
+  
+  ✖ 1 problem (1 error, 0 warnings)
+  
+
+2021-03-24 05:30:13 info: ------------------------------------------
+2021-03-24 05:30:13 info: >>> Running Unit Test `ex2-pokemonApp` <<<
+2021-03-24 05:30:13 info: ------------------------------------------
+2021-03-24 05:30:19 info: All unit tests passed.
+2021-03-24 05:30:21 info: All steps were completed successfully
+2021-03-24 05:44:04 info: ------------------------------------------
+2021-03-24 05:44:04 info: >>> Running Unit Test `ex2-pokemonApp` <<<
+2021-03-24 05:44:04 info: ------------------------------------------
+2021-03-24 05:44:10 info: All unit tests passed.
+2021-03-24 05:44:12 info: All steps were completed successfully
+2021-03-24 05:49:03 info: ---------------------------------------
+2021-03-24 05:49:03 info: >>> Running Unit Test `ex1-johnWho` <<<
+2021-03-24 05:49:03 info: ---------------------------------------
+2021-03-24 05:49:03 info: Exercise has not yet been modified
+2021-03-24 05:49:06 error: *** Unit Test Error Report ***
+
+- getAnonName should call `new Promise()`
+- getAnonName should take a single argument
+- getAnonName : `resolve()` should be called with a one argument
+- getAnonName : `reject()` should be called with a one argument
+- getAnonName should resolve when called with a string argument,
+- getAnonName should reject with an Error object when called without an argument,
+
+2021-03-24 05:49:22 info: ----------------------------------------
+2021-03-24 05:49:22 info: >>> Running Unit Test `ex4-diceRace` <<<
+2021-03-24 05:49:22 info: ----------------------------------------
+2021-03-24 05:49:26 info: All unit tests passed.
+2021-03-24 05:49:28 info: All steps were completed successfully
+2021-03-24 07:15:06 info: ---------------------------------------------
+2021-03-24 07:15:06 info: >>> Running Unit Test `ex1-programmerFun` <<<
+2021-03-24 07:15:06 info: ---------------------------------------------
+2021-03-24 07:15:12 info: All unit tests passed.
+2021-03-24 07:15:14 info: All steps were completed successfully
+2021-03-24 07:15:24 info: -------------------------------------------------
+2021-03-24 07:15:24 info: >>> Running Unit Test `ex2-checkDoubleDigits` <<<
+2021-03-24 07:15:24 info: -------------------------------------------------
+2021-03-24 07:15:24 info: Exercise has not yet been modified
+2021-03-24 07:15:26 error: *** Unit Test Error Report ***
+
+- checkDoubleDigits should exist and be executable
+
+2021-03-24 07:15:59 info: ------------------------------------------
+2021-03-24 07:15:59 info: >>> Running Unit Test `ex2-pokemonApp` <<<
+2021-03-24 07:15:59 info: ------------------------------------------
+2021-03-24 07:16:03 info: All unit tests passed.
+2021-03-24 07:16:05 info: All steps were completed successfully
+2021-03-24 07:16:15 info: -----------------------------------------
+2021-03-24 07:16:15 info: >>> Running Unit Test `ex3-rollAnAce` <<<
+2021-03-24 07:16:15 info: -----------------------------------------
+2021-03-24 07:16:17 info: All unit tests passed.
+2021-03-24 07:16:18 info: All steps were completed successfully
+2021-03-24 07:16:32 info: ----------------------------------------
+2021-03-24 07:16:32 info: >>> Running Unit Test `ex4-diceRace` <<<
+2021-03-24 07:16:32 info: ----------------------------------------
+2021-03-24 07:16:34 info: All unit tests passed.
+2021-03-24 07:16:36 info: All steps were completed successfully
+2021-03-24 07:21:36 info: ---------------------------------------------
+2021-03-24 07:21:36 info: >>> Running Unit Test `ex1-programmerFun` <<<
+2021-03-24 07:21:36 info: ---------------------------------------------
+2021-03-24 07:21:42 info: All unit tests passed.
+2021-03-24 07:21:44 info: All steps were completed successfully
+2021-03-24 07:21:51 info: ------------------------------------------
+2021-03-24 07:21:51 info: >>> Running Unit Test `ex2-pokemonApp` <<<
+2021-03-24 07:21:51 info: ------------------------------------------
+2021-03-24 07:21:55 info: All unit tests passed.
+2021-03-24 07:21:57 info: All steps were completed successfully
+2021-03-24 07:22:05 info: -----------------------------------------
+2021-03-24 07:22:05 info: >>> Running Unit Test `ex3-rollAnAce` <<<
+2021-03-24 07:22:05 info: -----------------------------------------
+2021-03-24 07:22:07 info: All unit tests passed.
+2021-03-24 07:22:09 info: All steps were completed successfully
+2021-03-24 07:22:18 info: ----------------------------------------
+2021-03-24 07:22:18 info: >>> Running Unit Test `ex4-diceRace` <<<
+2021-03-24 07:22:18 info: ----------------------------------------
+2021-03-24 07:22:20 info: All unit tests passed.
+2021-03-24 07:22:22 info: All steps were completed successfully
+2021-03-24 08:29:04 info: ----------------------------------------------
+2021-03-24 08:29:04 info: >>> Running Unit Test `ex1-giveCompliment` <<<
+2021-03-24 08:29:04 info: ----------------------------------------------
+2021-03-24 08:29:04 info: Exercise has not yet been modified
+2021-03-24 08:29:08 error: *** Unit Test Error Report ***
+
+- giveCompliment should take a single parameter
+- giveCompliment should include a `compliments` array initialized with 10 strings
+  No such array found
+- giveCompliment should give a random compliment: You are `compliment`, `name`!
+
+2021-03-24 08:29:25 info: ----------------------------------------
+2021-03-24 08:29:25 info: >>> Running Unit Test `ex5-vscDebug` <<<
+2021-03-24 08:29:25 info: ----------------------------------------
+2021-03-24 08:29:25 warn: A unit test file was not provided.
+2021-03-24 08:29:27 info: All steps were completed successfully
+2021-03-24 08:29:53 info: ----------------------------------------
+2021-03-24 08:29:53 info: >>> Running Unit Test `ex5-vscDebug` <<<
+2021-03-24 08:29:53 info: ----------------------------------------
+2021-03-24 08:29:53 warn: A unit test file was not provided.
+2021-03-24 08:29:55 info: All steps were completed successfully
+2021-03-24 08:36:03 info: ---------------------------------------------
+2021-03-24 08:36:03 info: >>> Running Unit Test `ex1-programmerFun` <<<
+2021-03-24 08:36:03 info: ---------------------------------------------
+2021-03-24 08:36:09 info: All unit tests passed.
+2021-03-24 08:36:12 info: All steps were completed successfully
+2021-03-24 08:36:25 info: ------------------------------------------
+2021-03-24 08:36:25 info: >>> Running Unit Test `ex2-pokemonApp` <<<
+2021-03-24 08:36:25 info: ------------------------------------------
+2021-03-24 08:36:29 info: All unit tests passed.
+2021-03-24 08:36:32 info: All steps were completed successfully
+2021-03-24 08:36:48 info: -----------------------------------------
+2021-03-24 08:36:48 info: >>> Running Unit Test `ex3-rollAnAce` <<<
+2021-03-24 08:36:48 info: -----------------------------------------
+2021-03-24 08:36:50 info: All unit tests passed.
+2021-03-24 08:36:52 info: All steps were completed successfully
+2021-03-24 08:37:13 info: ----------------------------------------
+2021-03-24 08:37:13 info: >>> Running Unit Test `ex4-diceRace` <<<
+2021-03-24 08:37:13 info: ----------------------------------------
+2021-03-24 08:37:15 info: All unit tests passed.
+2021-03-24 08:37:17 info: All steps were completed successfully
+2021-03-24 08:37:42 info: ----------------------------------------
+2021-03-24 08:37:42 info: >>> Running Unit Test `ex5-vscDebug` <<<
+2021-03-24 08:37:42 info: ----------------------------------------
+2021-03-24 08:37:42 warn: A unit test file was not provided.
+2021-03-24 08:37:44 info: All steps were completed successfully
+2021-03-24 08:38:28 info: --------------------------------------------
+2021-03-24 08:38:28 info: >>> Running Unit Test `ex6-browserDebug` <<<
+2021-03-24 08:38:28 info: --------------------------------------------
+2021-03-24 08:38:28 info: Exercise has not yet been modified
+2021-03-24 08:38:28 warn: A unit test file was not provided.
+2021-03-24 08:38:31 info: All steps were completed successfully
