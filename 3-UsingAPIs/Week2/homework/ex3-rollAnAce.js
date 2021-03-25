@@ -1,5 +1,5 @@
 'use strict';
-const { values } = require('lodash');
+// const { values } = require('lodash');
 /*------------------------------------------------------------------------------
 1. Run the exercise as given and observe that it works as advertised. Note that 
    the dice must be rolled an unpredictable number of times until we get an ACE 
