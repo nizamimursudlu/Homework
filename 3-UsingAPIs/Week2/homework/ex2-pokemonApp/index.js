@@ -18,18 +18,59 @@ Complete the four functions provided in the starter `index.js` file:
 Try and avoid using global variables. Instead, use function parameters and 
 return values to pass data back and forth.
 ------------------------------------------------------------------------------*/
-function fetchData(/* TODO parameter(s) go here */) {
+
+
+
+async function fetchData(url) {
   // TODO complete this function
+  const response = await fetch(url);
+  const json = await response.json();
+  return json.results;
 }
 
-function fetchAndPopulatePokemons(/* TODO parameter(s) go here */) {
+
+function fetchAndPopulatePokemons(data, select) {
   // TODO complete this function
+  data.forEach((pokemon) => {
+    const option = document.createElement("option")
+    select.appendChild(option)
+    option.value = pokemon.name
+    option.textContent = pokemon.name
+  })
 }
 
-function fetchImage(/* TODO parameter(s) go here */) {
-  // TODO complete this function
-}
+async function main() {
 
-function main() {
-  // TODO complete this function
+  const div = document.createElement("div");
+  document.body.appendChild(div);
+  div.style.width = "120px"
+
+  const button = document.createElement("button");
+  div.appendChild(button);
+  button.id = "button";
+  button.setAttribute("type", "submit")
+  button.textContent = "Get Pokemon!";
+
+  const select = document.createElement("select");
+  div.appendChild(select);
+  select.id = "select";
+
+  const img = document.createElement("img")
+
+  button.addEventListener('click', async () => {
+    try {
+      const data = await fetchData("https://pokeapi.co/api/v2/pokemon/?limit=151")
+      fetchAndPopulatePokemons(data, select)
+    } catch (error) {
+      console.log(error)
+    }
+  })
+
+  select.onchange = async function fetchImage() {
+    const resp = await fetch(`https://pokeapi.co/api/v2/pokemon/${select.value}`)
+    const imageData = await resp.json()
+    const image = imageData.sprites.front_default
+    div.appendChild(img).src = image
+  }
 }
+window.addEventListener('load', main);
