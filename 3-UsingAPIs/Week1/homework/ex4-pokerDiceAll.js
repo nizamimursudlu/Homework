@@ -20,13 +20,11 @@ function rollTheDices() {
   const dices = [1, 2, 3, 4, 5];
   const arrayOfPromises = dices.map(el => rollDice(el))
 
-  Promise.all(arrayOfPromises).then(values => {
-    return Promise.all(values.map(r => r
-    )).then((results) => console.log('Resolved!', results))
-  }).catch((error) => console.log('Rejected!', error.message));
+  return Promise.all(arrayOfPromises).then(values => values)
 }
+rollTheDices().then((results) => console.log('Resolved!', results))
+  .catch((error) => console.log('Rejected!', error.message));
 
-rollTheDices()
 
 // ! Do not change or remove the code below
 module.export = rollTheDices;
