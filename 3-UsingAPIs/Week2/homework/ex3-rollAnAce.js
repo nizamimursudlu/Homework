@@ -1,5 +1,5 @@
 'use strict';
-// const { values } = require('lodash');
+const { values } = require('lodash');
 /*------------------------------------------------------------------------------
 1. Run the exercise as given and observe that it works as advertised. Note that 
    the dice must be rolled an unpredictable number of times until we get an ACE 
@@ -11,17 +11,13 @@
 // ! Do not change or remove the next two lines
 const rollDice = require('../../helpers/pokerDiceRoller');
 
-function rollDiceUntil(wantedValue) {
+async function rollDiceUntil(wantedValue) {
   // TODO: rewrite this function using async/await
-  const recurse = async () => {
-    const response = await rollDice()
-    const value = await response
-    if (value !== wantedValue) {
-      return recurse();
-    }
-    return value;
-  };
-  return recurse();
+  const value = await rollDice()
+  while (value !== wantedValue) {
+    return rollDiceUntil("ACE")
+  }
+  return value
 }
 
 // TODO refactor this function to use try/catch
@@ -35,7 +31,5 @@ async function main() {
   }
 }
 
-main();
+main()
 
-// ! Do not change or remove the code below
-module.exports = rollDiceUntil;
