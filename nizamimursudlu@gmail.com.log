@@ -331,3 +331,24 @@ ex3-rollAnAce.js
 2021-03-24 08:38:28 info: Exercise has not yet been modified
 2021-03-24 08:38:28 warn: A unit test file was not provided.
 2021-03-24 08:38:31 info: All steps were completed successfully
+2021-03-25 10:41:40 info: ----------------------------------------
+2021-03-25 10:41:40 info: >>> Running Unit Test `ex5-vscDebug` <<<
+2021-03-25 10:41:40 info: ----------------------------------------
+2021-03-25 10:41:40 warn: A unit test file was not provided.
+2021-03-25 10:41:43 info: All steps were completed successfully
+2021-03-25 11:30:29 info: ----------------------------------------------
+2021-03-25 11:30:29 info: >>> Running Unit Test `ex1-giveCompliment` <<<
+2021-03-25 11:30:29 info: ----------------------------------------------
+2021-03-25 11:30:29 info: Exercise has not yet been modified
+2021-03-25 11:30:33 error: *** Unit Test Error Report ***
+
+- giveCompliment should take a single parameter
+- giveCompliment should include a `compliments` array initialized with 10 strings
+  No such array found
+- giveCompliment should give a random compliment: You are `compliment`, `name`!
+
+2021-03-25 11:30:49 info: --------------------------------------------
+2021-03-25 11:30:49 info: >>> Running Unit Test `ex6-browserDebug` <<<
+2021-03-25 11:30:49 info: --------------------------------------------
+2021-03-25 11:30:49 warn: A unit test file was not provided.
+2021-03-25 11:30:50 info: All steps were completed successfully
