@@ -11,16 +11,16 @@ const getAnonName = (firstName) => {
   return new Promise((resolve, reject) => {
     setTimeout(() => {
       if (firstName) {
-        resolve(`${firstName} Doe`)
+        resolve(`${firstName} Doe`);
       } else {
-        reject(new Error("You didn't pass in a first name!"))
+        reject(new Error("You didn't pass in a first name!"));
       }
-    }, 1000)
-  })
-}
-getAnonName("John").then(res => console.log(res)).catch((error) => console.log(error.message))
-
-
+    }, 1000);
+  });
+};
+getAnonName('John')
+  .then((res) => console.log(res))
+  .catch((error) => console.log(error.message));
 
 // ! Do not change or remove the code below
 module.exports = getAnonName;
