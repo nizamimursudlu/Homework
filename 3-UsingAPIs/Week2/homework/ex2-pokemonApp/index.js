@@ -69,10 +69,16 @@ async function main() {
   });
 
   select.addEventListener('change', async function fetchImage() {
-    const resp = fetchData(`https://pokeapi.co/api/v2/pokemon/${select.value}`);
-    const imageData = await resp;
-    const image = imageData.sprites.front_default;
-    div.appendChild(img).src = image;
+    try {
+      const resp = fetchData(
+        `https://pokeapi.co/api/v2/pokemon7806086/${select.value}`
+      );
+      const imageData = await resp;
+      const image = imageData.sprites.front_default;
+      div.appendChild(img).src = image;
+    } catch (error) {
+      console.log(error);
+    }
   });
 }
 window.addEventListener('load', main);
