@@ -22,6 +22,9 @@ return values to pass data back and forth.
 async function fetchData(url) {
   // TODO complete this function
   const response = await fetch(url);
+  if (!response.ok) {
+    throw new Error('Error!!!');
+  }
   const json = await response.json();
   return json;
 }
@@ -29,7 +32,7 @@ async function fetchData(url) {
 function fetchAndPopulatePokemons(pokemons, select) {
   // TODO complete this function
   select.textContent = '';
-  pokemons.results.forEach((pokemon) => {
+  pokemons.forEach((pokemon) => {
     const option = document.createElement('option');
     select.appendChild(option);
     option.value = pokemon.name;
@@ -59,19 +62,17 @@ async function main() {
       const data = await fetchData(
         'https://pokeapi.co/api/v2/pokemon/?offset=151&limit=151'
       );
-      fetchAndPopulatePokemons(data, select);
+      fetchAndPopulatePokemons(data.results, select);
     } catch (error) {
       console.log(error);
     }
   });
 
-  select.onchange = async function fetchImage() {
-    const resp = await fetch(
-      `https://pokeapi.co/api/v2/pokemon/${select.value}`
-    );
-    const imageData = await resp.json();
+  select.addEventListener('change', async function fetchImage() {
+    const resp = fetchData(`https://pokeapi.co/api/v2/pokemon/${select.value}`);
+    const imageData = await resp;
     const image = imageData.sprites.front_default;
     div.appendChild(img).src = image;
-  };
+  });
 }
 window.addEventListener('load', main);
