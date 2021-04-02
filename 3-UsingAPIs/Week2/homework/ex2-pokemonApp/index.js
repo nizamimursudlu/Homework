@@ -22,9 +22,6 @@ return values to pass data back and forth.
 async function fetchData(url) {
   // TODO complete this function
   const response = await fetch(url);
-  if (!response.ok) {
-    throw new Error('Error!!!');
-  }
   const json = await response.json();
   return json;
 }
@@ -64,20 +61,20 @@ async function main() {
       );
       fetchAndPopulatePokemons(data.results, select);
     } catch (error) {
-      console.log(error);
+      console.log('blah1');
     }
   });
 
   select.addEventListener('change', async function fetchImage() {
     try {
       const resp = fetchData(
-        `https://pokeapi.co/api/v2/pokemon7806086/${select.value}`
+        `https://pokeapi.co/api/v2/pokemon/${select.value}`
       );
       const imageData = await resp;
       const image = imageData.sprites.front_default;
       div.appendChild(img).src = image;
     } catch (error) {
-      console.log(error);
+      console.log('balh2');
     }
   });
 }
