@@ -61,7 +61,7 @@ async function main() {
       );
       fetchAndPopulatePokemons(data.results, select);
     } catch (error) {
-      console.log('blah1');
+      console.log(error);
     }
   });
 
@@ -74,7 +74,7 @@ async function main() {
       const image = imageData.sprites.front_default;
       div.appendChild(img).src = image;
     } catch (error) {
-      console.log('balh2');
+      console.log(error);
     }
   });
 }
