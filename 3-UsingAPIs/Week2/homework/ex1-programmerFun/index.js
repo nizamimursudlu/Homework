@@ -24,34 +24,25 @@ async function requestData(url) {
 
 function renderImage(data) {
   // TODO render the image to the DOM
-  const image = data.img
-  const img = document.createElement("img")
-  document.body.appendChild(img).src = image
+  const image = data.img;
+  const img = document.createElement('img');
+  document.body.appendChild(img).src = image;
 }
 
 function renderError(error) {
   // TODO render the error to the DOM
-  if (error) {
-    const div = document.createElement('div')
-    document.body.appendChild(div).textContent = error
-  }
+  const div = document.createElement('div');
+  document.body.appendChild(div).textContent = error;
 }
 
 // TODO refactor with async/await and try/catch
 
 async function main() {
-
-
-
-
-
-
-
   try {
-    const data = await requestData('https://xkcd.now.sh/?comic=latest')
-    renderImage(data)
+    const data = await requestData('https://xkcd.now.sh/?comic=latest');
+    renderImage(data);
   } catch (error) {
-    renderError(error)
+    renderError(error);
   }
 }
 
