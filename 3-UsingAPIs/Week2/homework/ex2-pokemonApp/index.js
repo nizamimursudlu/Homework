@@ -22,6 +22,10 @@ return values to pass data back and forth.
 async function fetchData(url) {
   // TODO complete this function
   const response = await fetch(url);
+  console.log(response.status);
+  if (!response.ok) {
+    console.log('from the throw');
+  }
   const json = await response.json();
   return json;
 }
@@ -61,7 +65,7 @@ async function main() {
       );
       fetchAndPopulatePokemons(data.results, select);
     } catch (error) {
-      console.log(error);
+      console.log('from the catch');
     }
   });
 
@@ -74,7 +78,7 @@ async function main() {
       const image = imageData.sprites.front_default;
       div.appendChild(img).src = image;
     } catch (error) {
-      console.log(error);
+      console.log('from the catch');
     }
   });
 }
